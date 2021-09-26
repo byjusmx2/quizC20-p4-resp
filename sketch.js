@@ -119,16 +119,16 @@ function draw() {
     gameOver.visible = true;
     restart.visible = true;
     
-    //set velcity of each game object to 0
+    //establecer la velocidad de cada objeto del juego como 0
     ground.velocityX = 0;
     trex.velocityY = 0;
     obstaclesGroup.setVelocityXEach(0);
     cloudsGroup.setVelocityXEach(0);
     
-    //change the trex animation
+    //cambiar la animación del trex
     trex.changeAnimation("collided",trex_collided);
     
-    //set lifetime of the game objects so that they are never destroyed
+    //establecer lifetime de los objetos del juego para que no sean destruidos nunca
     obstaclesGroup.setLifetimeEach(-1);
     cloudsGroup.setLifetimeEach(-1);
     
